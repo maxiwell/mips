@@ -7,11 +7,12 @@ OPTIONS    =
 
 MAKEFILE   = Makefile.archc 
 
-include $(MAKEFILE)
 
 all: $(MAKEFILE)
 
 $(MAKEFILE): $(INPUTFILE) $(ISAFILE)
 	$(GENERATOR) $(INPUTFILE) $(OPTIONS)
 
+
+include $(MAKEFILE)
 
